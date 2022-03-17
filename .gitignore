@@ -170,7 +170,5 @@ dist
 # TODO: where does this rule come from?
 docs/_book
 
-# TODO: where does this rule come from?
-test/
 
 # End of https://www.toptal.com/developers/gitignore/api/solidity,macos,vue
