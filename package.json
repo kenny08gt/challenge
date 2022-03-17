@@ -1,0 +1,32 @@
+{
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.5.0",
+    "@truffle/hdwallet-provider": "^2.0.4",
+    "dotenv": "^16.0.0",
+    "prb-math": "^2.4.3"
+  },
+  "name": "challenge",
+  "description": "## A) Challenge",
+  "version": "1.0.0",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenny08gt/challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kenny08gt/challenge/issues"
+  },
+  "homepage": "https://github.com/kenny08gt/challenge#readme",
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.23"
+  }
+}
