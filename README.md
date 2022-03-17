@@ -36,6 +36,8 @@ Useful resources:
 - Educational Resource: https://github.com/austintgriffith/scaffold-eth
 - Project Starter: https://github.com/abarmat/solidity-starter
 
+#### Solution
+* https://github.com/kenny08gt/challenge/blob/main/contracts/ETHPool.sol
 ### 2) Write tests
 
 Make sure that all your code is tested properly
@@ -56,4 +58,4 @@ Create a script (or a Hardhat task) to query the total amount of ETH held in the
 
 _You can use any library you prefer: Ethers.js, Web3.js, Web3.py, eth-brownie_
 
-* run `npm run balance`
+* `npm run balance`

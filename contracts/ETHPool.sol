@@ -51,9 +51,10 @@ contract ETHPool is AccessControl {
 
     function depositReward() public payable {
         require(hasRole(ROLE_TEAM, msg.sender), "Only team can deposit reward");
-        reward_pool = reward_pool + msg.value;
+        require(msg.value > 0, "Amount should be higher than 0");
         require(total_users > 0, "Cannot split reward without users");
 
+        reward_pool = reward_pool + msg.value;
         uint256 new_total = 0;
 
         for (uint256 i = 0; i < total_users; i++) {
