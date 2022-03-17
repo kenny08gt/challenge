@@ -3,6 +3,7 @@
     "@openzeppelin/contracts": "^4.5.0",
     "@truffle/hdwallet-provider": "^2.0.4",
     "dotenv": "^16.0.0",
+    "ganache-cli": "^6.12.2",
     "prb-math": "^2.4.3"
   },
   "name": "challenge",
@@ -13,7 +14,8 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "truffle test ./test/ethPool.js",
+    "balance": "node interact.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,8 @@
   },
   "homepage": "https://github.com/kenny08gt/challenge#readme",
   "devDependencies": {
-    "truffle-plugin-verify": "^0.5.23"
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "truffle-plugin-verify": "^0.5.23",
+    "web3": "^1.7.1"
   }
 }

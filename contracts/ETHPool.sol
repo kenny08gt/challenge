@@ -11,9 +11,9 @@ contract ETHPool is AccessControl {
 
     bytes32 public constant ROLE_TEAM = keccak256("ROLE_TEAM");
     bytes32 public constant ROLE_USER = keccak256("ROLE_USER");
-    uint256 reward_pool = 0;
-    uint256 total_pool = 0;
-    uint256 total_users = 0;
+    uint256 public reward_pool = 0;
+    uint256 public total_pool = 0;
+    uint256 public total_users = 0;
     mapping(address => uint256) users_pool;
     mapping(uint256 => address) private holders;
     mapping(address => uint256) private shares;

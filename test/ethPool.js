@@ -26,7 +26,7 @@ contract('ETHPool', (accounts) => {
         }
     });
 
-    it('Team deposit reward', async () => {
+    it('Team deposit reward but split fail because no users exists', async () => {
         const ETHPoolInstance = await ETHPool.deployed();
         try {
             await ETHPoolInstance.depositReward({ from: owner, value: web3.utils.toWei(String(1), 'ether') });
@@ -51,7 +51,7 @@ contract('ETHPool', (accounts) => {
         }
     });
 
-    it('Can withdraw reward', async () => {
+    it('User A deposit, User B deposit, Team deposit reward', async () => {
         const user = accounts[1];
         const ETHPoolInstance = await ETHPool.deployed();
         await ETHPoolInstance.addUserRole(user, { from: owner });
@@ -84,7 +84,7 @@ contract('ETHPool', (accounts) => {
         await ETHPoolInstance.withdraw({ from: user2 });
     });
 
-    it('Can withdraw reward case2', async () => {
+    it('User A deposit, team deposit reward, User B deposit', async () => {
         const user = accounts[1];
         const ETHPoolInstance = await ETHPool.deployed();
         await ETHPoolInstance.addUserRole(user, { from: owner });
