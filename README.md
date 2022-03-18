@@ -50,7 +50,7 @@ Deploy the contract to any Ethereum testnet of your preference. Keep record of t
 Bonus:
 
 - Verify the contract in Etherscan
-- https://rinkeby.etherscan.io/address/0x6084867961ccf13a3A3B639271862C59732BB8B4#code
+- https://rinkeby.etherscan.io/address/0xe2c0e1cC6Ec2205Aa4881f4c6b46d9D9B3DB393c#code
 
 ### 4) Interact with the contract
 
